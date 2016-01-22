@@ -1,0 +1,153 @@
+/*Color: Green */
+h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong,a,a:hover {
+color:#84bb26;
+}
+
+span.circular {
+background:#84bb26;
+}
+
+.btn-border,.btn-white {
+background:#84bb26;
+}
+
+.bg-color {
+background:#84bb26;
+}
+
+.loader-item {
+border-color:#84bb26;
+color:#84bb26;
+}
+
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus {
+background:#84bb26;
+}
+
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus {
+background:#84bb26;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:focus,.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
+border-top:4px solid #84bb26;
+color:#84bb26;
+}
+
+.tabbed .nav-tabs > li.active > a, .tabbed .nav-tabs > li.active > a:hover, .tabbed .nav-tabs > li.active > a:focus {
+border-top:3px solid #84bb26;
+}
+
+.progress-bar {
+background:#84bb26;
+}
+
+#members .info span {
+color:#84bb26;
+}
+
+#filters li a {
+border:2px solid #84bb26;
+}
+
+#filters li a.active,#filters li a:hover {
+background:#84bb26;
+border:2px solid #84bb26;
+}
+
+.attribution .attr-info strong {
+color:#84bb26;
+}
+
+#timeline ul.timeline li.note span.note-arrow,#timeline ul.timeline li.note span.note-arrow:after {
+border-right-color:#84bb26;
+}
+
+#timeline ul.timeline li.note,#timeline ul.timeline li.note:after {
+background:#84bb26;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n) span.note-arrow,#timeline ul.timeline li.note:nth-of-type(2n) span.note-arrow:after {
+border-left-color:#84bb26;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n+1):before {
+border-right:10px solid #84bb26;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n+2):before {
+border-left:10px solid #84bb26;
+}
+
+.accordion h4 a span {
+background:#84bb26;
+}
+
+#blog .blog-icon {
+background:#84bb26;
+}
+
+#blog ul.categories li:last-child a,#blog ul.categories li a:hover {
+color:#84bb26;
+}
+
+#comments-wrapper li {
+border-left:5px solid #84bb26;
+}
+
+#comments-wrapper li .comment-date {
+color:#84bb26;
+}
+
+.post-media .post-comments {
+background:#84bb26;
+}
+
+ul.menu-link > li a:hover {
+color:#84bb26;
+}
+
+.tagcloud a:hover {
+background:#84bb26;
+}
+
+.pager li > a,.pager li > span {
+background:#84bb26;
+}
+
+.pager li > a:hover,.pager li > a:focus {
+background:#84bb26;
+}
+
+.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus {
+background:#84bb26;
+border-color:#84bb26;
+}
+
+.pagination > li > a,.pagination > li > span {
+border:1px solid #84bb26;
+color:#84bb26;
+}
+
+.pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus {
+background:#84bb26;
+border:1px solid #84bb26;
+}
+
+footer a:hover {
+color:#84bb26;
+}
+
+.socials li:hover {
+background:#84bb26;
+border:1px solid #84bb26;
+}
+
+@media (max-width:768px){
+	.mm-list a:hover,.mm-list a:focus {
+	background:#84bb26;
+	}
+	
+	.mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen),.mm-menu .mm-list > li.mm-selected > span {
+	background:#84bb26;
+	}
+}

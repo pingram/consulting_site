@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+        <link rel="shortcut icon" href="img/favicon.png">
+		<title>Battle Documentation</title>
+		<!-- Bootstrap core CSS -->
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/document.css" rel="stylesheet">
+        <link href="./css/theme-balupton.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+      	<link href='http://fonts.googleapis.com/css?family=Open+Sans:100,200,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!-- Custom styles for this template -->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body data-spy="scroll" data-target="#sidebar" data-offset="100">
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 header-container">
+						<h1><img src="./img/cross9.svg" alt=""> Battle Documentation</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-color space">
+	        <p>Thank you for purchasing Battle HTML Template. If you have any questions that are beyond the scope of this help file, please feel free to <a href="http://themeforest.net/user/genethic#from">email me</a>. You can also <a href="http://themeforest.net/user/genethic"> follow me</a> on Themeforest to keep track of all my theme updates and future themes. Thanks so much!</p>
+         </div>
+         <!--end container -->
+         <div class="container">
+			<div class="row">
+				<div class="col-md-3 sidebar-container">
+                	<!-- sidebar -->
+					<div id="sidebar">
+						<ul class="nav bs-sidenav">
+							<li class="active"><a href="#getting-started">01. Getting Started</a></li>
+							<li><a href="#colors">02. Colors</a></li>
+							<li><a href="#typography">03. Typography</a></li>
+							<li><a href="#media">04. Media</a></li>
+                            <li><a href="#buttons-links">05. Buttons & Links</a></li>                            
+							<li><a href="#grid">06. Grid</a></li>
+                            <li><a href="#navigation">07. Navigation</a></li>
+                            <li><a href="#index">08. Index file</a></li>
+							<li><a href="#blog">09. Blog files</a></li>
+                            <li><a href="#contact-form">10. Contact form Setup</a></li>
+						</ul>
+					</div>
+                    <!-- end sidebar -->
+				</div>
+				<div class="col-md-9">
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="getting-started">01. Getting Started</h1>
+						</div>
+
+						<h3>Some Requirements</h3>
+                        <ul>
+							<li>Demo video don't work on local sites. If you upload your website to a live server, the video will work fine.</li>
+                            <li>You need a text editor to edit files for customization.</li>
+							<li>You need a FTP client to upload the HTML Template nto your hosting.</li>
+						</ul>
+                        
+                        <h3>Text and Images</h3>
+                        <ul>
+							<li>Replace all &lt;h1&gt;, &lt;p&gt; and &lt;li&gt; with your own text.</li>
+                            <li>Change the src of &lt;img&gt; tags.</li>
+						</ul>
+
+					</div><!-- /doc-section -->
+                    
+                    <div class="doc-section">
+						<div class="page-header">
+							<h1 id="colors">02. Colors</h1>
+						</div>
+
+						<p>Battle comes with different color stylesheets that you can use instead of the defaolt color. Changing the main color of your website is very easy:</p>
+						
+                        <h3>Change main color to other predefined color.</h3>
+						<ol>
+							<li>Open the index.html file.</li>
+							<li> Look for the following lines in the head section: <pre class="highlight">&#60;link rel="stylesheet" href="css/style.css"&#62;</pre></li>
+                            <li>Place the following line right below the style.css line:  <pre class="highlight">&#60;link rel="stylesheet" href="css/colors/red.css"&#62;</pre></li></li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+                        <p>You can add custom colors to your website easily:</p>
+						
+                        <h3>Change main color to custom color.</h3>
+						<ol>
+							<li>Open any color.css file and copy it.</li>
+							<li> In your new copy, replace your color.
+                            
+<pre class="highlight">
+/* Background color */
+... {
+background: <strong>#123ABC</strong>;
+}
+
+/* Color */
+... {
+color: <strong>#123ABC</strong>;
+}
+
+/* Border color */
+... {
+border: 2px solid <strong>#123ABC</strong>;
+}
+</pre>
+                                
+							</li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+                         <h3>Change background color.</h3>
+                         <p>You can change the background color of any section. You can put background color white, black or main css color (that you can change in previous steps). Example:</p>
+
+						<ol>
+							<li>Open index.html file and go to the section you want to customize.</li>
+							<li>Add or change the bg-* class: <strong>bg-dark</strong> for black, <strong>bg-color</strong> for main css color and <strong>nothing</strong> for white background.</li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="typography">03. Typography</h1>
+						</div>
+
+						<h3>Change font family</h3>
+						<p>Follow the next steps to change font family:</p>
+
+						<ol>
+							<li>Open the style.css file in the css folder with a text editor</li>
+							<li>Search for the following code (line 13): 
+                            <pre class="highlight">body {
+background:#fff;
+color:#999;
+<strong>font-family:'Open Sans', sans-serif;</strong>
+font-style:normal;
+font-weight:400;
+line-height:1;
+margin:0;
+padding:0;
+position:relative;
+}</pre></li>
+							<li>Replace with the font family you wish.</li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+                        <h3>Using Google Web Fonts</h3>
+
+						<ol>
+							<li>Go to <a href="https://www.google.com/fonts">Google Web Fonts</a> website and choose your favourite font.</li>
+							<li>Click the 'Quick use' button.</li>
+							<li>Copy the code you'll find at the thrid point on the first tab.</li>
+                           	<li>Open index.html file (or other) and search this line: <pre class="highlight"> &#60;link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'&#62;</pre></li>
+                            <li>Replace it with the you have copy on previous steps.</li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+                        <p>If you want to use more than one Google font, don't delete actual code before adding new fonts.</p>
+                        
+                        <h3>Text alignement</h3>
+                        <p>You can change the text alignement by adding this classes to any tag: <code>.text-left</code>, <code>.text-right</code> or <code>.text-center</code>. Examples:</p>
+                        <pre class="highlight">&lt;p <strong>class="text-center"</strong>&gt;hello!&lt;/p&gt;</pre>
+                        <pre class="highlight">&lt;p <strong>class="text-left"</strong>&gt;hello!&lt;/p&gt;</pre>
+
+					</div><!-- /doc-section -->
+                    
+                    
+                    <div class="doc-section">
+						<div class="page-header">
+							<h1 id="media">04. Media</h1>
+						</div>
+                        
+						<p>If you want to display an image on your website with for example dimensions of 1024x768 pixels, you can use the following code:</p>
+                        <pre class="highlight">&#60;img src="images/my-image.jpg" width="1024" height="768"&#62;</pre>
+                        
+                        <h3>Responsive images</h3>
+						<p>Add img-responsive class to the images for make them responsive:</p>
+                         <pre class="highlight">&#60;img src="images/my-image.jpg" <strong>class="img-responsive"</strong> width="1024" height="768"&#62;</pre>
+                         
+                        <h3>Change the favicon</h3>
+						<ol>
+							<li>Search this line: <pre class="highlight">&#60;link rel="shortcut icon" href="images/favicon.png"&#62;</pre></li>
+							<li>Change the src of the image to find your favicon.</li>
+                            <li>Save the file and view the resolt.</li>
+						</ol>
+                        
+                        <h3>Change the logo</h3>
+						<ol>
+							<li>Search this line: <pre class="highlight">&#60;a class="navbar-brand" href="index.html"&#62;&#60;img src="flaticon/cross9.png" alt=""&#62; Battle&#62;&#60;/a&#62;</pre></li>
+							<li>Change the src of the image to find your logo.</li>
+                            <li>Save the file.</li>
+						</ol>
+                        
+                        <h3>Parallax Backgrounds</h3>
+                        <p>Battle Template use stellar.js to make a parallax effect with background images. This is an example for adding a parallax background to </p>
+						<ol>
+                        	<li>Open index.html file and search for this line:
+                            
+                            <pre class="highlight">&lt;section id="features" class="space-max slide"&gt;</pre>
+                            </li>
+							<li>Replace with this other: <pre class="highlight">&lt;section id="features" class="space-max slide" data-stellar-background-ratio="0" &gt;</pre>
+                            </li>
+							<li>Open style.css and search for  this line: 
+                            <pre class="highlight">/*
+* FEATURES SECTION
+* -------------------------------------------------- */</pre></li>
+                            <li>Add background image to the section. Add this code just below: <pre class="highlight">#features {
+background:url(../images/3.jpg) center center fixed;
+background-size:cover;
+}</pre></li>				
+							<li>Change the background image url with your image.</li>
+                            <li>Save the files.</li>
+						</ol>
+                        
+                         <h3 id="tooltip">Display tooltips</h3>
+						<ol>
+                        	<li>Open index.html file (or other) and search for the div in with you want to add a tooltip.</li>
+							<li>At this attributes to the div: <code> data-toggle="tooltip" data-placement="top" title="January 12, 2014"</code> </li>
+                            <li>The title attribute will be used for tooltip content. Replace with your custom text.</li>
+                            <li>Example link with tooltip at top side: <pre class="highlight">&lt;a class="note-circle" href="" data-toggle="tooltip" data-placement="top" title="January 12, 2014"&gt;&lt;/a&gt;</pre>
+                          </li>
+                            <li>Save the file.</li>
+						</ol>
+                        
+                        <p>More info in <a href="http://getbootstrap.com/javascript/#tooltips">bootstrap</a> page.</p>
+
+					</div><!-- /doc-section -->
+                    
+                     <div class="doc-section">
+						<div class="page-header">
+							<h1 id="buttons-links">05. Buttons & Links</h1>
+						</div>
+
+						<h3>Buttons</h3>
+                        <p>You can add button style easily by adding <code>.btn</code>, <code>.btn-white</code> or <code>.btn-border</code> classes to any tag. Examples:</p>
+                        <pre class="highlight">&lt;a href="index.html" <strong>class="btn-white"</strong>&gt;hello!&lt;/a&gt;</pre>
+                        <pre class="highlight">&lt;a href="index.html" <strong>class="btn-border"</strong>&gt;hello!&lt;/a&gt;</pre>
+                        
+                        <h3>Links</h3>
+                        <p>You can create links adding this code:</p>
+                        <pre class="highlight">&lt;a <strong>href="index.html"</strong>&gt;hello!&lt;/a&gt;</pre>
+                        <p>Change the link url at your wish.</p>
+                       
+					</div><!-- /doc-section -->
+                    
+                    
+                    <div class="doc-section">
+						<div class="page-header">
+							<h1 id="grid">06. Grid</h1>
+						</div>
+
+                        <p>Battle Template is based on <a href="http://getbootstrap.com">Bootstrap 3.1</a> framework. This use a 12 columns <a href="http://getbootstrap.com/css/#grid">grid system</a>. Extracted from getbootstrap.com/css:</p>
+                        
+                        <blockquote><p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+<ol>
+<li>Rows must be placed within a .container (fixed-width) or .container-fluid (foll-width) for proper alignment and padding.</li>
+<li>Use rows to create horizontal groups of columns.</li>
+<li>Content shoold be placed within columns, and only columns may be immediate children of rows.</li>
+<li>Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.</li>
+<li>Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.</li>
+<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns woold use three .col-xs-4.  </li>  
+</ol>
+</blockquote>
+
+<p>So, you can easily change the columns of each section by changing the column class. For example:</p>
+<pre class="highlight">&lt;div class="row"&gt;
+  &lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;</pre>
+<pre class="highlight">&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class="col-md-6"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+               
+
+					</div><!-- /doc-section -->                    
+                    
+                    <div class="doc-section">
+						<div class="page-header">
+							<h1 id="navigation">07. Navigation</h1>
+						</div>
+
+						<h3>Float right or left</h3>
+                        <p>The menu links float is defined by the class <code>navbar-right</code> by defaolt. You can change this to <code>navbar-left</code> for make the links float to left side.</p>
+                        
+                        <h3>Homepage internal links</h3>
+                        <p>Homepage menu links are by defaolt internal links. The <code>href=""</code> of the link path must point to same page. But you can make external link, that point to other pages by adding the class <code>.external</code>.</p>
+                        
+                        <p>Internal:</p>
+                        <pre class="highlight">&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</pre>
+                        
+                        <p>External:</p>
+                        <pre class="highlight">&lt;li&gt;&lt;a href="blog-left.html" class="external"&gt;Left sidebar&lt;/a&gt;&lt;/li&gt;</pre>
+                        
+                        <p>In other pages, the menu links work by defaolt.</p>
+
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="index">08. Index file</h1>
+						</div>
+
+						<p>The index file is divided on sections. You can delete or change position of each section by selecting, copy and put it at the point you want. Remember that all section start with <code> &lt;section&gt; </code> tag and end with <code> &lt;/section&gt; </code>.</p>
+                        
+                         <h3>Foll Screen Slider</h3>
+                         <p>Home slider use background images, added via CSS. The slide text have to be changed on the HTML.</p>
+                         
+                         <h4>Change Slider Images</h4>
+						<ol>
+                        	<li>Open style.css file</li>
+							<li>Search for this code: <pre class="highlight">#slides .image1{
+background:url(<strong>../images/1.jpg</strong>);
+background-position-x:50% !important;
+background-size:cover;
+}</pre></li>
+                            <li>Change the image url.</li>
+                            <li>You will find other images just below. You shoold change too.</li>
+                            <li>Save the files.</li>
+						</ol>
+                        
+                        <h4>Change slide caption text</h4>
+						<ol>
+                        	<li>Open index.html file and search for this code:
+                            <pre class="highlight">&lt;!-- slide-item -->
+&lt;li class="slide-item image1" data-stellar-background-ratio="0.5"&gt;
+	&lt;div class="overlay-1"&gt;&lt;/div&gt;
+	&lt;div class="caption-wrapper"&gt;
+		&lt;div class="slide-caption"&gt;
+			&lt;p&gt;&lt;a href="#about" class="btn-white">hello!&lt;/a&gt;&lt;/p&gt;
+			&lt;h1&gt;Life is a Battle&lt;/h1&gt;
+			&lt;p&gt;You will need a partner for the fight&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/li&#62;
+<!-- end slide-item -->
+</pre>
+                     		</li>
+                            <li>Customize the slide caption text of the slide. You will find other slide just below.</li>
+                            <li>Save the files.</li>
+						</ol>
+                        
+                        <h4>Add more images</h4>
+						<ol>
+                        	<li>Open index.html file and search for this code:
+                            <pre class="highlight">&lt;!-- slide-item -->
+&lt;li class="slide-item image1" data-stellar-background-ratio="0.5"&gt;
+	&lt;div class="overlay-1"&gt;&lt;/div&gt;
+	&lt;div class="caption-wrapper"&gt;
+		&lt;div class="slide-caption"&gt;
+			&lt;p&gt;&lt;a href="#about" class="btn-white">hello!&lt;/a&gt;&lt;/p&gt;
+			&lt;h1&gt;Life is a Battle&lt;/h1&gt;
+			&lt;p&gt;You will need a partner for the fight&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/li&#62;
+<!-- end slide-item -->
+</pre>
+                     		</li>
+                            <li>Copy and paste this code for create more slides. Remember to change the class image1 to another, for example, image4 and customize the slide caption text.</li>
+							<li>Open style.css file and search for this code: <pre class="highlight">#slides .image1{
+background:url(<strong>../images/1.jpg</strong>);
+background-position-x:50% !important;
+background-size:cover;
+}</pre></li>
+							<li>Copy and paste this code. Change the class image1 to your custom class (image4, for example) and the image url.</li>
+                            <li>Save the files.</li>
+						</ol>
+                        
+                         <h3>About Section</h3>
+                         <p>Home slider use background images, added via CSS. The slide text have to be changed on the HTML.</p>
+                         
+                         <h4>Panel tabs</h4>
+                         <p>Tabs consists of two parts: the tab header and the tab content.</p>
+                         
+                         <p><strong>Tab headers:</strong></p>
+                         <pre class="highlight">&lt;ol class="nav nav-tabs"&gt;
+&lt;li class="active"&gt;&lt;a <strong>href="#home" data-toggle="tab"</strong>&gt;Philosophy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;Knowledge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;Experience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;History&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</pre>
+					<p>The tabs headers must be a list with the class <code>.nav-tabs</code>. Each tab head must have <code>data-toggle="tab"</code> attribute and an href with the id of the tab content.</p>
+                    
+                         <p><strong>Tabs content:</strong></p>
+                         <pre class="highlight">&lt;div class="tab-content"&gt;
+&lt;div <strong>class="tab-pane active" id="home"</strong>&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="tab-pane" id="profile"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="tab-pane" id="messages"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="tab-pane" id="settings"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+                        
+                        <p>Each tab content must be wrapper with a div with the class <code>.tab-pane</code> and the id. This divs must be wrapper by <code>.tab-content</code> div. You can select a tab for being active by defaolt adding <code>.active</code> class to the head and content divs.</p>
+                        
+                        <h4>Progress Bars</h4>
+                        <p>Progress bars are wrapper by <code>.progress-bars</code>. Each bar is defined by <code>.progreess-bar</code> div.</p>
+                        <pre class="highlight">&lt;div class="progress"&gt;
+	&lt;div class="progress-bar" role="progressbar" data-value="70"&gt;HTML&lt;span&gt;70%&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>You need to add <code>data-value="xx"</code> that will define the progress of each bar. Also you can add a text info inside the bar div. Put <code>&lt;span&gt;&lt;/span&gt;</code> wrapper for doing text alignement to right.</p>
+                        
+                        <h3>Info Section</h3>
+                        
+                        <p>You can make count up numbers easily with this html structure:</p>
+                        <pre class="highlight">&lt;div class="fact-number" data-perc="46"&gt;
+	&lt;div class="fact"&gt;
+		&lt;p class="factor"&gt;0&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+						<p>Add <code>data-perc="xx"</code> to define the number to wich it have to count up. Inside the <code>.factor</code> is the number. I recommend to set it to 0. If you want, you can add more info:</p>
+                        <pre class="highlight">&lt;div class="fact-number" data-perc="46"&gt;
+	&lt;div class="fact"&gt;
+    	&lt;p&gt;&lt;span class="circolar"&gt;&lt;i class="fa fa-users"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+		&lt;p class="factor"&gt;0&lt;/p&gt;
+        &lt;p&gt;Happy Clients&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                        
+                        <h3>Portfolio</h3>
+                        <p>The portfolio consists of two parts: the portfolio filters and the projects.</p>
+                        <p><strong>Filters:</strong></p>
+                         <pre class="highlight">&lt;div id="options" data-effect="fade">
+    &lt;!-- portfolio filters --&gt;
+    &lt;ol id="filters" class="option-set"&gt;
+        &lt;li&gt;&lt;a class="filter active" data-filter="all"&gt;All&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-filter=".photo" class="filter"&gt;Photo&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-filter=".web" class="filter"&gt;Web&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-filter=".brand" class="filter"&gt;Brand&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a data-filter=".design" class="filter"&gt;Design&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;!-- end portfolio filters --&gt;
+&lt;/div&gt;</pre>
+					<p>Use a ol list to make the filters. You only need to add the class <code>.filter</code> and <code>data-filter="your-project-class"</code> attribute. In this attribute you have to include the classes of the projects that you want to show when the filter is selected.</p>
+                    
+                         <p><strong>Projects:</strong></p>
+                         <p>Search for this line on the portfolio section:</p>
+                         <pre class="highlight">&lt;div class="home-projects animated text-center" data-animation="fadeInDown"&gt;</pre>
+                        
+                        <p>Inside this wrapper, there are portfolio projects. Each project is defined by <code>&lt;article&gt;&lt;/article&gt;</code> tags. You can create as many projects as you want, by coping and article and adding your custom text and image.</p>
+                        
+                        <pre class="highlight">&lt;!-- portfolio item --&gt;
+&lt;article class="project-item mix photo design"&gt;
+    &lt;figure&gt;
+        &lt;img src="images/portfolio/1.jpg" alt="image alt" class="img-responsive" /&gt;
+        &lt;figcaption&gt;
+            &lt;div class="caption-wrap"&gt;
+                &lt;div class="actions"&gt;
+                    &lt;h3&gt;Project One&lt;/h3&gt;
+                    &lt;a href="images/portfolio/1.jpg" class="btn-white btn-border-sm btn-project" data-pretty="prettyPhoto"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/article&gt;
+&lt;!-- portfolio item --&gt;</pre>
+
+						<p>This link is for image lightbox:</p>
+                        <pre class="highlight">&lt;a href="images/portfolio/1.jpg" class="btn-white btn-border-sm btn-project" data-pretty="prettyPhoto"&gt;&lt;i class="fa fa-plus"&gt;&lt;/i&gt;&lt;/a&gt;</pre>
+                        <p>You need to add <code>data-pretty="prettyPhoto"</code>. You can put a different image size (bigger) in this link.</p>
+                        
+                        <h3>Timeline</h3>
+                        
+                        <p>You can add more items to the timeline by coping and paste this code. You will find it on timeline section:</p>
+                        <pre class="highlight">&lt;!-- Note --&gt;
+&lt;li class="note animated" data-animation="fadeInDown"&gt;
+    &lt;p class="history-head uppercase semibold">Popolar social networks&lt;/p&gt;
+    &lt;p class="history-desc no-margin normal"&gt;Ever man are put down his very. And marry may table him avoid. Hard sell it were into it upon. He forbade affixed parties of assured to me windows.&lt;/p&gt;
+    &lt;a class="note-circle" href="" data-toggle="tooltip" data-placement="top" title="January 12, 2014"&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;!-- end Note --&gt;</pre>
+						<p>Add your custom content. The .note-circle div is a tooltip. You will find an explanation <a href="#tooltip">here</a>.</p>
+                        <p>You will see others <code>li</code> tags:</p>
+                        <pre class="highlight">&lt;li class="time today"&gt;2014&lt;/li&gt;
+&lt;li class="time"&gt;2013&lt;/li&gt;
+&lt;li class="start"&gt;&lt;a href="#history"&gt;&lt;i class="fa fa-arrow-up"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</pre>
+
+						<p>This are for dates. The first and the last have to be uniques, the middle one can be repeated for set different dates.</p>
+                        
+                        <h3>FAQs</h3>
+                        
+                        <p>You will found accordion items inside this wrapper.</p>
+                        <pre class="highlight">&lt;div class="accordion" id="accordion"&gt;&lt;/div&gt;</pre>
+                        <p>Each item have this structure:</p>
+                        <pre class="highlight">&lt;!-- accordion item -->
+&lt;div class="panel animated" data-animation="fadeInDown"&gt;
+    &lt;div class="panel-title"&gt;
+        &lt;h4&gt;
+            &lt;a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed"&gt;
+            &lt;span&gt;&lt;/span&gt;Easily change layout colour&lt;/a&gt;
+        &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id="collapse1" class="panel-collapse collapse"&gt;
+        &lt;div class="text"&gt;
+            &lt;p&gt;Yes, Battle come with 5 differents colors templates. You can easily change the style template to put your favorite!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- accordion item --&gt;</pre>
+                        
+                        <p>Customize the text of the items. You can copy and paste for creating more items.</p>
+                        
+					</div><!-- /doc-section -->
+
+					<div class="doc-section">
+						<div class="page-header">
+							<h1 id="blog">09. Blog files</h1>
+						</div>
+
+						<p>You woold like to use blog file to add posts. Battle Template have three options for blog pages. You can use left sidebar, right sidebar or foll width.</p>
+                        
+                        <p>On blog-left.html, blog-right.html and blog-foll.html, you will find moltiple articles. Change the text and image and add more post if you need. You only have to copy and paste the code between <code>&lt;article&gt;&lt;/article&gt;</code></p>
+                        
+                        <p>Do the same with post-left.html, post-right.html and post-foll.html.</p>
+                        
+                        <h3>Sidebar</h3>
+                        <p>Sidebar have 6 different widgets.You can duplicate or delete each widget. Widgets are inside <code>.widget</code> wrapper. Inside some widget you will see a header:</p>
+                        <pre class="highlight">&lt;h4 class="heading"&gt;Categories&lt;/h4&gt;</pre>
+                        
+                        <p>The content is different in each widget. You can change all text and images.</p>
+                        
+                        <h3>Pagination</h3>
+                        
+                        <p>In all blog page you will find a pagination. Search for one of this snnipets:</p>
+                        
+                        <pre class="highlight">&lt;!-- Pagination --&gt;
+&lt;ol class="pager"&gt;
+    &lt;li class="previous"&gt;&lt;a href="#">&larr; Story Second&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="next"&gt;&lt;a href="#">Blog story &rarr;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- end Pagination --&gt;</pre>
+
+						<pre class="highlight">&lt;!-- Pagination --&gt;
+&lt;ol class="pagination"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&laquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="active"&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&raquo;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- end Pagination --&gt;</pre>
+
+					</div><!-- /doc-section -->
+                                        
+                    <div class="doc-section">
+						<div class="page-header">
+							<h1 id="contact-form">10. Contact Form Setup</h1>
+						</div>
+                        
+                           <p>For contact form setup you only have to set an email address in wich you want receive the messages. Search this code and change it:</p>
+                           <pre class="language-php">//If there is no error, send the email
+if(!isset($hasError)) {
+   $emailTo = '<strong>your-email@mail.com</strong>'; // Put your own email address here
+   $body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nComments:\n $comments";
+   $headers = 'From: My Site <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+   mail($emailTo, $subject, $body, $headers);
+   $emailSent = true;
+}</pre>
+						
+					</div><!-- /doc-section -->
+			</div>
+		</div>
+    </div>
+
+		<!-- /container -->
+		<!-- JavaScript -->
+		<script src="./js/jquery-1.10.1.min.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+        <script src="./js/jquery.syntaxhighlighter.min.js"></script>
+		<script src="./js/document.js"></script>
+	</body>
+</html>

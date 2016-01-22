@@ -1,0 +1,153 @@
+/*Color: Red */
+h1 strong,h2 strong,h3 strong,h4 strong,h5 strong,h6 strong,a,a:hover {
+color:#EF4A43;
+}
+
+span.circular {
+background:#EF4A43;
+}
+
+.btn-border,.btn-white {
+background:#EF4A43;
+}
+
+.bg-blue {
+background:#EF4A43;
+}
+
+.loader-item {
+border-color:#EF4A43;
+color:#EF4A43;
+}
+
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus {
+background:#EF4A43;
+}
+
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus {
+background:#EF4A43;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:focus,.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
+border-top:4px solid #EF4A43;
+color:#EF4A43;
+}
+
+.tabbed .nav-tabs > li.active > a, .tabbed .nav-tabs > li.active > a:hover, .tabbed .nav-tabs > li.active > a:focus {
+border-top:3px solid #EF4A43;
+}
+
+.progress-bar {
+background:#EF4A43;
+}
+
+#members .info span {
+color:#EF4A43;
+}
+
+#filters li a {
+border:2px solid #EF4A43;
+}
+
+#filters li a.active,#filters li a:hover {
+background:#EF4A43;
+border:2px solid #EF4A43;
+}
+
+.attribution .attr-info strong {
+color:#EF4A43;
+}
+
+#timeline ul.timeline li.note span.note-arrow,#timeline ul.timeline li.note span.note-arrow:after {
+border-right-color:#EF4A43;
+}
+
+#timeline ul.timeline li.note,#timeline ul.timeline li.note:after {
+background:#EF4A43;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n) span.note-arrow,#timeline ul.timeline li.note:nth-of-type(2n) span.note-arrow:after {
+border-left-color:#EF4A43;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n+1):before {
+border-right:10px solid #EF4A43;
+}
+
+#timeline ul.timeline li.note:nth-of-type(2n+2):before {
+border-left:10px solid #EF4A43;
+}
+
+.accordion h4 a span {
+background:#EF4A43;
+}
+
+#blog .blog-icon {
+background:#EF4A43;
+}
+
+#blog ul.categories li:last-child a,#blog ul.categories li a:hover {
+color:#EF4A43;
+}
+
+#comments-wrapper li {
+border-left:5px solid #EF4A43;
+}
+
+#comments-wrapper li .comment-date {
+color:#EF4A43;
+}
+
+.post-media .post-comments {
+background:#EF4A43;
+}
+
+ul.menu-link > li a:hover {
+color:#EF4A43;
+}
+
+.tagcloud a:hover {
+background:#EF4A43;
+}
+
+.pager li > a,.pager li > span {
+background:#EF4A43;
+}
+
+.pager li > a:hover,.pager li > a:focus {
+background:#EF4A43;
+}
+
+.pagination > .active > a,.pagination > .active > span,.pagination > .active > a:hover,.pagination > .active > span:hover,.pagination > .active > a:focus,.pagination > .active > span:focus {
+background:#EF4A43;
+border-color:#EF4A43;
+}
+
+.pagination > li > a,.pagination > li > span {
+border:1px solid #EF4A43;
+color:#EF4A43;
+}
+
+.pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus {
+background:#EF4A43;
+border:1px solid #EF4A43;
+}
+
+footer a:hover {
+color:#EF4A43;
+}
+
+.socials li:hover {
+background:#EF4A43;
+border:1px solid #EF4A43;
+}
+
+@media (max-width:768px){
+	.mm-list a:hover,.mm-list a:focus {
+	background:#EF4A43;
+	}
+	
+	.mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen),.mm-menu .mm-list > li.mm-selected > span {
+	background:#EF4A43;
+	}
+}
