@@ -2269,3 +2269,14 @@ left:44%;
 #slides .owl-item li {
     position: relative;
  }
+
+
+
+
+
+ /* CUSTOM STYLES */
+
+ h3.about-icon {
+    font-size: 80px;
+    margin: 0px 0 21px 0;
+ }
