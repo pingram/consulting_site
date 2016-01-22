@@ -180,6 +180,15 @@ jQuery(document).ready(function($) {
 			}, 3000);
 			return false;
 		});
+
+		// scroll from landing page to about
+		$('a#to-about').click(function (e) {
+			e.preventDefault();
+			$('body,html').animate({
+				scrollTop: $('#about').offset().top
+			}, 1200);
+			return false;
+		});
 	});
 
 	/* ==============================================
