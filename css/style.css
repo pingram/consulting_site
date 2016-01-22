@@ -192,7 +192,7 @@ background:#191919;
 }
 
 .space {
-padding:50px 0;
+padding:100px 0 0 0;
 }
 
 .divide10 {
@@ -632,7 +632,9 @@ display:none;
 * HOMEPAGE SLIDER
 * -------------------------------------------------- */
 #slides .image1{
-background:url(../images/1.jpg);
+/*background:url(../images/1.jpg);*/
+background:url(../images/torres_del_paine.jpg);
+/*background:url(../images/happy-woman.jpg);*/
 background-position-x:50% !important;
 background-size:cover;
 }
