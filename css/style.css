@@ -2284,3 +2284,12 @@ left:44%;
 .services-box {
     padding: 35px 20px 0px 20px;
 }
+img.office-space {
+    width: 100%;
+}
+.about-description {
+    font-size: 20px;
+}
+hr {
+    margin-bottom: 50px;
+}
