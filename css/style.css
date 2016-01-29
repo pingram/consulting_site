@@ -633,7 +633,7 @@ display:none;
 * -------------------------------------------------- */
 #slides .image1{
 /*background:url(../images/1.jpg);*/
-background:url(../images/torres_del_paine.jpg);
+background:url(../images/torres-del-paine.jpg);
 /*background:url(../images/happy-woman.jpg);*/
 background-position-x:50% !important;
 background-size:cover;
@@ -2287,9 +2287,18 @@ left:44%;
 img.office-space {
     width: 100%;
 }
-.about-description {
-    font-size: 20px;
-}
 hr {
     margin-bottom: 50px;
+}
+@media (min-width: 990px) {
+    .about-description {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+@media (min-width: 1200px) {
+    .about-description {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
