@@ -2287,9 +2287,18 @@ left:44%;
 img.office-space {
     width: 100%;
 }
-.about-description {
-    font-size: 20px;
-}
 hr {
     margin-bottom: 50px;
+}
+@media (min-width: 990px) {
+    .about-description {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+@media (min-width: 1200px) {
+    .about-description {
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
